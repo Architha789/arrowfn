@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow fn</title>
+</head>
+<body>
+    <h2>Arrow function</h2>
+    <h3>1) Calculate the area of a rectangle using an arrow function inputting the width and height</h3>
+    <input type="text" placeholder="Length" id="num1">
+    <input type="text" placeholder="Bredth" id="num2">
+    <button type="button" onclick="area()">Area</button>
+    <p id="p1"></p>
+
+    <script>
+       function area(){
+        let rectangle=""
+        let a=parseInt(document.getElementById('num1').value);
+        let b=parseInt(document.getElementById('num2').value);
+        rectangle=(a,b)=>a*b;
+        document.getElementById("p1").innerHTML=rectangle(a,b);
+       }
+    </script>
+</body>
+</html>
